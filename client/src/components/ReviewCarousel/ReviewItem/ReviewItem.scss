@@ -1,0 +1,114 @@
+@import "../../../theme/styles/variables";
+
+.review {
+  &__wrapper {
+    box-sizing: border-box;
+    padding: 10px 7px 76.9px 4px;
+    background: #383841;
+    border-radius: 5px;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7px;
+    padding-right: 33px;
+    padding-left: 34px;
+  }
+  &__name-reviewer {
+    color: $palette-secondary;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 25px;
+    text-align: center;
+  }
+  &__name-car {
+    margin-top: 17px;
+    margin-bottom: 27px;
+    color: $palette-secondary;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 19px;
+    text-align: center;
+  }
+  &__review {
+    width: 100%;
+    margin-top: 32px;
+    overflow: hidden;
+    color: $palette-secondary;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-style: italic;
+    line-height: 19px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1041px) {
+  .review__wrapper {
+    max-width: 320px;
+    margin-right: 11.5px;
+    margin-left: 11.5px;
+  }
+  .review__review {
+    height: 57px;
+  }
+}
+
+@media screen and (max-width: 1040px) and (min-width: 362px) {
+  .review__wrapper {
+    max-width: 320px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  .review__review {
+    height: 73px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .review__wrapper {
+    width: 300px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  .review__review {
+    height: 73px;
+  }
+}
+@media screen and (min-width: 1041px) {
+  .review__wrapper {
+    max-width: 320px;
+    margin-right: 11.5px;
+    margin-left: 11.5px;
+  }
+  .review__review {
+    height: 57px;
+  }
+}
+
+@media screen and (max-width: 1040px) and (min-width: 362px) {
+  .review__wrapper {
+    max-width: 320px;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  .review__review {
+    height: 73px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .review__wrapper {
+    min-width: 266px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  .review__review {
+    height: 73px;
+  }
+}

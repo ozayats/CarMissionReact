@@ -1,0 +1,54 @@
+@import "src/theme/styles/_variables";
+
+.App {
+  &__bg {
+    min-height: 100vh;
+    background-color: $palette-primary;
+  }
+
+  &__main-page-top-head {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-height: 500px) {
+  .App {
+    &__main-page-top-head {
+      background-position: top;
+      background-size: 100vw auto;
+      background-attachment: scroll;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-height: 501px) {
+  .App {
+    &__main-page-top-head {
+      background-position: top left;
+      background-size: auto 100vh;
+      background-attachment: scroll;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) and (min-height: 411px) {
+  .App {
+    &__main-page-top-head {
+      background-position: top left;
+      background-size: auto 100vh;
+      background-attachment: scroll;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) and (max-height: 410px) {
+  .App {
+    &__main-page-top-head {
+      background-position: top left;
+      background-size: 100vw auto;
+      background-attachment: scroll;
+    }
+  }
+}

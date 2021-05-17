@@ -1,0 +1,13 @@
+.admin {
+  &__label-name {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+
+  &__checkbox-label-name {
+    display: inline;
+    margin-bottom: 0;
+
+  }
+}

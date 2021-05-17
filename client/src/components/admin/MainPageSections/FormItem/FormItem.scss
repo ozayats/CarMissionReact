@@ -1,0 +1,154 @@
+@import "src/theme/styles/variables";
+
+.admin {
+
+  //&__form-item {
+  //  display: flex;
+  //  flex-direction: column;
+  //  align-items: center;
+  //  margin-bottom: 30px;
+  //  color: $Rectangle48;
+  //}
+  //
+  //&__buttons-box,
+  //&__input {
+  //  width: 50vw;
+  //}
+  //
+  //&__buttons-box {
+  //  display: flex;
+  //  flex-direction: row;
+  //  align-items: center;
+  //  justify-content: space-around;
+  //}
+  //
+  //&__submit-btn,
+  //&__add-btn,
+  //&__delete-btn {
+  //  width: 10vw;
+  //  font-family: $content-font;
+  //  border: none;
+  //  border-radius: 10px;
+  //  cursor: pointer;
+  //}
+  //
+  //&__submit-btn:hover,
+  //&__add-btn:hover,
+  //&__delete-btn:hover {
+  //  color: white;
+  //  font-weight: bold;
+  //  text-shadow: 1px 1px 1px $Rectangle68;
+  //}
+  //
+  //&__submit-btn {
+  //  background: greenyellow;
+  //}
+  //
+  //&__add-btn {
+  //  margin-bottom: 30px;
+  //  background: dodgerblue;
+  //}
+  //
+  //&__delete-btn {
+  //  background: orangered;
+  //}
+  //
+  //&__input {
+  //  margin-bottom: 20px;
+  //  font-family: $content-font;
+  //}
+  //
+  //&__form-updated-confirmation {
+  //  color: greenyellow;
+  //  font-weight: bold;
+  //  font-size: 12px;
+  //  text-shadow: 1px 1px 1px $Rectangle68;
+  //}
+  &__form-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 30px;
+    color: $palette-secondary;
+    border: $palette-secondary 1px solid;
+    border-radius: 30px;
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  &__checkbox-label {
+    //position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: left;
+    //width: 70%;
+    //margin-bottom: 20px;
+  }
+
+  &__submit-btn {
+    padding: 10px 20px;
+    font-family: $content-font;
+    background: darkseagreen;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: greenyellow;
+    }
+  }
+
+  &__input {
+       width: 100%;
+       height: 25px;
+       color: $palette-primary;
+       font-size: 17px;
+       font-family: $content-font;
+       background: $palette-secondary;
+       border: none;
+     }
+
+  &__checkbox-input {
+    width: auto;
+    //height: 25px;
+    //color: $Rectangle67;
+    //font-size: 17px;
+    //font-family: $content-font;
+    //background: $Rectangle48;
+    //border: none;
+  }
+
+  &__delete-btn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 5px 10px;
+    color: $palette-secondary;
+    font-size: 40px;
+    background: none;
+    border: none;
+    transition: 0.3s;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  &__form-error {
+    position: absolute;
+    top: 100%;
+    color: red;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../../theme/styles/variables";
+
+.section__heading {
+  color: $palette-secondary;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: $headings-font;
+  line-height: 52px;
+  text-align: center;
+}

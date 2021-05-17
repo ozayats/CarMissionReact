@@ -1,0 +1,41 @@
+@import "src/theme/styles/variables";
+
+.callback {
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: calc((100% / 3) - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: $content-font;
+    background: $palette-secondary;
+  }
+
+  &__data {
+    margin-bottom: 10px;
+    color: $palette-primary;
+    font-size: 18px;
+  }
+
+  &__delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    box-sizing: border-box;
+    color: $palette-primary;
+    font-size: 30px;
+    background: none;
+    border: 1px solid transparent;
+    transition: .3s ease;
+
+    &:hover {
+      color: #7c3636;
+      border: 1px solid #7c3636;
+      border-radius: 15px;
+    }
+  }
+}

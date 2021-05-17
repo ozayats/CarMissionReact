@@ -1,0 +1,36 @@
+@import "../../theme/styles/variables";
+
+.footer__networks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__networks {
+  position: absolute;
+  top: 250px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  height: 25vh;
+}
+
+@media screen and (min-width: $sm-size) and (max-width: 960px) {
+  .header__networks {
+    top: calc((100vh - 80px) / 2);
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header__networks {
+    position: initial;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    width: 50vw;
+    height: auto;
+    margin: 10px auto;
+  }
+}

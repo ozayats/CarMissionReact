@@ -1,0 +1,4 @@
+export const LOADING_BLOGS = "LOADING_BLOGS";
+export const TOGGLE_IS_LOADING_BLOGS = "TOGGLE_IS_LOADING_BLOGS";
+export const ADD_NEW_BLOG = "ADD_NEW_BLOG";
+export const UPDATE_BLOG = "UPDATE_BLOG";

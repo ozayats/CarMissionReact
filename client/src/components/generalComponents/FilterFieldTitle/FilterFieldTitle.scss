@@ -1,0 +1,18 @@
+@import "../../../theme/styles/variables";
+
+.filter__field-title {
+  display: inline-block;
+  padding-bottom: 6px;
+  color: $palette-secondary;
+  font-size: 18px;
+  line-height: 25px;
+  border-bottom: 1px solid transparent;
+  border-image-source: linear-gradient(
+    274.95deg,
+    #bebfc0 2.76%,
+    #7d7e80 32.64%,
+    #dddedf 60.28%,
+    #646567 97.25%
+  );
+  border-image-slice: 1;
+}

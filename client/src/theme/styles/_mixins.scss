@@ -1,0 +1,54 @@
+@import "variables";
+
+@mixin content-block {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin section-heading {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: $headings-font;
+  font-style: normal;
+  line-height: 52px;
+  text-align: center;
+}
+
+@mixin admin-submit-btn {
+  padding: 10px 20px;
+  font-family: $content-font;
+  background: darkseagreen;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: greenyellow;
+  }
+}
+
+@mixin form-error {
+  position: absolute;
+  top: 100%;
+  color: red;
+}
+
+@mixin add-form-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  color: white;
+  font-size: 40px;
+  background: darkseagreen;
+  border: none;
+  border-radius: 30px;
+  transition: .3s;
+
+  &:hover {
+    background: greenyellow;
+  }
+}

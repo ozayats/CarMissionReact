@@ -1,0 +1,52 @@
+@import "src/theme/styles/variables";
+@import "src/theme/styles/mixins";
+
+.invite-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35vw;
+  color: $palette-secondary;
+
+  &__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__submit-btn {
+    @include admin-submit-btn;
+  }
+
+  &__input {
+    width: 100%;
+    height: 25px;
+    color: $palette-primary;
+    font-size: 17px;
+    font-family: $content-font;
+    background: $palette-secondary;
+    border: none;
+  }
+
+  &__error {
+    position: absolute;
+    top: 100%;
+    color: red;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

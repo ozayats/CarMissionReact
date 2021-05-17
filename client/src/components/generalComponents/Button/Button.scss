@@ -1,0 +1,249 @@
+@import "../../../theme/styles/variables";
+
+.button-callback {
+  padding: 9.44px 33.18px;
+  color: $palette-secondary;
+  font-size: 12px;
+  font-family: $content-font;
+  line-height: 16px;
+  text-align: center;
+  background: linear-gradient($palette-primary, $palette-primary) padding-box,
+    linear-gradient(
+        274.95deg,
+        #bebfc0 2.76%,
+        #7d7e80 32.64%,
+        #dddedf 60.28%,
+        #646567 97.25%
+      )
+      border-box;
+  border: 3px solid transparent;
+  border-radius: 18px;
+  outline: none;
+  transition: 0.3s;
+}
+.button-callback:hover {
+  background: linear-gradient($Rectangle65, $Rectangle65) padding-box,
+    linear-gradient(
+        274.95deg,
+        #bebfc0 2.76%,
+        #7d7e80 32.64%,
+        #dddedf 60.28%,
+        #646567 97.25%
+      )
+      border-box;
+}
+
+.button-modal {
+  padding: 5.5px 36.72px;
+  color: $palette-secondary;
+  font-size: 12px;
+  font-family: $content-font;
+  line-height: 16px;
+  text-align: center;
+  background: $palette-primary;
+  border: 2px solid $Rectangle51;
+  border-radius: 18px;
+  outline: none;
+  transition: 0.3s;
+}
+.button-modal:hover {
+  background: $Rectangle64;
+}
+
+.button-callback-bigger {
+  padding: 11px 43.67px;
+  color: $palette-secondary;
+  font-size: 12px;
+  font-family: $content-font;
+  line-height: 16px;
+  text-align: center;
+  background: linear-gradient($palette-primary, $palette-primary) padding-box,
+    linear-gradient(
+        274.95deg,
+        #bebfc0 2.76%,
+        #7d7e80 32.64%,
+        #dddedf 60.28%,
+        #646567 97.25%
+      )
+      border-box;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.button-callback-bigger:hover {
+  background: linear-gradient($Rectangle65, $Rectangle65) padding-box,
+    linear-gradient(
+        274.95deg,
+        #bebfc0 2.76%,
+        #7d7e80 32.64%,
+        #dddedf 60.28%,
+        #646567 97.25%
+      )
+      border-box;
+}
+.button-callback-bigger:active {
+  background: linear-gradient($Rectangle64, $Rectangle64) padding-box,
+    linear-gradient(
+        274.95deg,
+        #bebfc0 2.76%,
+        #7d7e80 32.64%,
+        #dddedf 60.28%,
+        #646567 97.25%
+      )
+      border-box;
+}
+.button2-send-request {
+  padding: 12.5px 44.3px;
+  color: $palette-secondary;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: $content-font;
+  line-height: 19px;
+  text-align: center;
+  background: linear-gradient($palette-primary, $palette-primary) padding-box,
+    linear-gradient(
+        274.95deg,
+        #bebfc0 2.76%,
+        #7d7e80 32.64%,
+        #dddedf 60.28%,
+        #646567 97.25%
+      )
+      border-box;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+.button2-send-request:hover {
+  background: linear-gradient($Rectangle65, $Rectangle65) padding-box,
+    linear-gradient(
+        274.95deg,
+        #bebfc0 2.76%,
+        #7d7e80 32.64%,
+        #dddedf 60.28%,
+        #646567 97.25%
+      )
+      border-box;
+}
+.button2-send-request:active {
+  background: linear-gradient($Rectangle64, $Rectangle64) padding-box,
+    linear-gradient(
+        274.95deg,
+        #bebfc0 2.76%,
+        #7d7e80 32.64%,
+        #dddedf 60.28%,
+        #646567 97.25%
+      )
+      border-box;
+}
+
+.button-choose-car {
+  padding: 12px 49.54px;
+  color: $palette-secondary;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: $content-font;
+  line-height: 19px;
+  text-align: center;
+  background: linear-gradient(#202125, #202125) padding-box,
+    linear-gradient(
+        274.95deg,
+        #bebfc0 2.76%,
+        #7d7e80 32.64%,
+        #dddedf 60.28%,
+        #646567 97.25%
+      )
+      border-box;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+.button-choose-car:hover {
+  background: linear-gradient($Rectangle65, $Rectangle65) padding-box,
+    linear-gradient(
+        274.95deg,
+        #bebfc0 2.76%,
+        #7d7e80 32.64%,
+        #dddedf 60.28%,
+        #646567 97.25%
+      )
+      border-box;
+}
+.button-subscribe {
+  padding: 4px 37.52px;
+  color: rgba(198, 209, 222, 0.5);
+  font-size: 14px;
+  font-family: $content-font;
+  line-height: 19px;
+  text-align: center;
+  background: #282832;
+  border: 1px solid rgba(198, 209, 222, 0.5);
+  border-radius: 3px;
+  outline: none;
+  transition: 0.3s;
+}
+.button-subscribe:hover {
+  color: rgba(198, 209, 222, 0.8);
+}
+.button-subscribe:active {
+  color: rgba(198, 209, 222, 0.8);
+  background: linear-gradient($Rectangle65, $Rectangle65) padding-box,
+    linear-gradient(
+        325.31deg,
+        rgba(124, 125, 127, 0.1) -54.96%,
+        rgba(190, 191, 192, 0.1) -39.28%,
+        rgba(125, 126, 128, 0.1) -2.72%,
+        rgba(221, 222, 223, 0.1) 44.09%,
+        rgba(100, 101, 103, 0.1) 78.43%
+      )
+      border-box;
+  border: 1px solid transparent;
+}
+
+// burger-button for mobile navbar
+@media screen and (max-width: 768px) {
+  .open-navbar {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 28px;
+    padding: 1px 0;
+    background: $gradient-first;
+    border: 0 solid transparent;
+    cursor: pointer;
+    &::after,
+    &::before {
+      position: absolute;
+      left: 0;
+      width: 28px;
+      padding: 1px 0;
+      background: $gradient-first;
+      animation-duration: 0.5s;
+      content: "";
+  
+    }
+    &::after {
+      top: 300%;
+      animation-name: after-burger;
+
+    }
+    &::before {
+      top: -300%;
+      animation-name: before-burger;
+    }
+    @keyframes after-burger {
+      0%   {transform: translateX(100%);}
+      100% {transform: translateX(0%);}
+    }
+
+
+    @keyframes before-burger {
+      0%   {transform: translateX(-100%);}
+      100% {transform: translateX(0%);}
+    }
+
+  }
+}

@@ -1,0 +1,66 @@
+@import "src/theme/styles/variables";
+
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__native {
+    position: absolute;
+    z-index: 2;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  &__custom {
+    position: relative;
+    box-sizing: border-box;
+    width: 13px;
+    height: 13px;
+    background: linear-gradient(#282832, #282832) padding-box,
+      linear-gradient(
+          274.95deg,
+          #bebfc0 2.76%,
+          #7d7e80 32.64%,
+          #dddedf 60.28%,
+          #646567 97.25%
+        )
+        border-box;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+
+  &__text {
+    margin-left: 6px;
+    color: rgba(198, 209, 222, 0.3);
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &__native:checked ~ &__custom::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    background: $gradient-second;
+    border-radius: 2px;
+    content: "";
+  }
+
+  &__native:checked ~ &__custom {
+    opacity: 1;
+  }
+
+  &__native:checked ~ &__text {
+    color: rgba(198, 209, 222, 1);
+  }
+}

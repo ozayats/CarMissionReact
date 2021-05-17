@@ -1,0 +1,36 @@
+@import "src/theme/styles/variables";
+
+.admin-packages {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+
+  &__form-container {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  &__container-head {
+    margin: 10px 0;
+  }
+
+  &__add-btn {
+    width: 50px;
+    margin-left: 48%;
+    color: white;
+    font-size: 40px;
+    background: darkseagreen;
+    border: none;
+    border-radius: 30px;
+    transition: .3s;
+
+    &:hover {
+      background: greenyellow;
+    }
+  }
+}

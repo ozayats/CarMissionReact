@@ -1,0 +1,92 @@
+@import "src/theme/styles/variables";
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.modal {
+  z-index: 3;
+  max-width: 50%;
+  max-height: 40%;
+  background-color: $palette-primary;
+  border-radius: 10px;
+
+
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: $palette-primary;
+    border-bottom: 1px solid $palette-secondary;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+  }
+
+  &-head-text {
+    color: $palette-secondary;
+    font-size: 22px;
+  }
+
+  &__content {
+    padding: 50px;
+  }
+
+  &__content-text {
+    color: $palette-secondary;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+
+  &__btn {
+    padding: 15px 50px;
+    color: $palette-secondary;
+    font-size: 17px;
+    font-family: $content-font;
+    background: $palette-primary;
+    border: 1px solid $palette-secondary;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  &__close-btn {
+    padding: 5px 10px;
+    color: $palette-secondary;
+    font-size: 40px;
+    background: none;
+    border: none;
+    transition: .3s;
+  }
+}
+
+.yes-btn {
+  &:hover {
+    color: darkseagreen;
+    border: 1px solid darkseagreen;
+  }
+}
+
+.no-btn {
+  &:hover {
+    color: #7c3636;
+    border: 1px solid #7c3636;
+  }
+}

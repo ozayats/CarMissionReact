@@ -1,0 +1,12 @@
+@import "src/theme/styles/_mixins";
+@import "src/theme/styles/_variables";
+
+.header {
+  &__bg {
+    padding-top: 20px;
+  }
+  &__container {
+    @include content-block();
+    max-width: 1350px;
+  }
+}

@@ -1,0 +1,131 @@
+@import "../../../theme/styles/variables";
+.card {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    background: #383841;
+    border-radius: 5px;
+  }
+
+  &__title {
+    padding: 17px 69px 11px 45px;
+    color: $palette-secondary;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 26px;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 9.9px 15px 0 15px;
+  }
+
+  &__fuel,
+  &__transmission,
+  &__year,
+  &__mileage,
+  &__auction {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__fuel-img,
+  &__mileage-img,
+  &__auction-img {
+    margin-right: 7px;
+  }
+
+  &__transmission-img {
+    margin-right: 8px;
+  }
+
+  &__year-img {
+    margin-right: 9px;
+  }
+
+  &__info-text {
+    color: $palette-secondary;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  &__line {
+    height: 1px;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-image: linear-gradient(
+      274.95deg,
+      #bebfc0 2.76%,
+      #7d7e80 32.64%,
+      #dddedf 60.28%,
+      #646567 97.25%
+    );
+    border: none;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    color: $palette-secondary;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__price-text {
+    margin-right: 20px;
+  }
+
+  &__details,
+  &__additionally-primary,
+  &__additionally-highlits,
+  &__additionally-seller {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__details {
+    padding: 13px 15px 14px 15px;
+  }
+
+  &__details-title,
+  &__additionally-title {
+    color: $palette-secondary;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__details-name,
+  &__additionally-name {
+    color: $palette-secondary;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &__additionally-primary {
+    padding: 12px 15px 5px 15px;
+  }
+
+  &__additionally-highlits {
+    padding: 0 15px 5px 15px;
+  }
+
+  &__additionally-seller {
+    padding: 0 15px 14px 15px;
+  }
+}

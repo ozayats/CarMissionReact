@@ -1,0 +1,33 @@
+@import "src/theme/styles/_mixins";
+
+.blogs {
+  &__container {
+    @include content-block();
+    padding-bottom: 50px;
+  }
+
+  &__section {
+    margin: 0 auto;
+    padding-bottom: 60px;
+    background: #282832;
+  }
+
+  &__wrapper {
+    padding-top: 62px;
+    padding-bottom: 42px;
+  }
+
+  &__show-more {
+    display: block;
+    margin: 0 auto;
+    color: $palette-secondary;
+    font-size: 18px;
+    background-color: transparent;
+    border: 0 solid transparent;
+    outline: none;
+
+    &:hover {
+      color: $Rectangle54;
+    }
+  }
+}

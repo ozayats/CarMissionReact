@@ -1,0 +1,128 @@
+@import "src/theme/styles/variables";
+
+.admin-packages {
+
+  &__form-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 30px;
+    color: #c6d1de;
+    border: #c6d1de 1px solid;
+    border-radius: 30px;
+  }
+
+  &__list-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__list-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__remove-option {
+    position: absolute;
+    top: calc(100% - 15px);
+    right: 10%;
+    color: $palette-secondary;
+    font-size: 12px;
+    background: none;
+    border: none;
+    transition: .3s;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  &__add-option {
+    position: absolute;
+    top: calc(100% - 15px);
+    left: 10%;
+    color: $palette-secondary;
+    font-size: 13px;
+    background: none;
+    border: none;
+    transition: .3s;
+
+    &:hover {
+      color: darkseagreen;
+    }
+  }
+
+  &__add-list {
+    color: $palette-secondary;
+    font-size: 18px;
+    background: none;
+    border: none;
+    transition: .3s;
+
+    &:hover {
+      color: darkseagreen;
+    }
+  }
+
+  &__form-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  &__submit-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-family: $content-font;
+    background: darkseagreen;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background: greenyellow;
+    }
+  }
+
+  &__form-input {
+    width: 100%;
+    height: 25px;
+    color: $palette-primary;
+    font-size: 17px;
+    font-family: $content-font;
+    background: $palette-secondary;
+    border: none;
+  }
+
+  &__delete-btn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 5px 10px;
+    color: $palette-secondary;
+    font-size: 25px;
+    background: none;
+    border: none;
+    transition: .3s;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  &__form-error {
+    position: absolute;
+    top: 100%;
+    color: red;
+  }
+}

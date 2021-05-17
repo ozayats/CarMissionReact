@@ -1,0 +1,62 @@
+@import "src/theme/styles/_mixins";
+@import "src/theme/styles/_variables";
+
+// All styles for footer navbar ar located in Navbar.scss & NavbarItems.scss
+
+.footer {
+  &__bg {
+    padding: 30px 0 50px;
+    background-color: $Rectangle66;
+  }
+  &__container {
+    @include content-block();
+  }
+  &__block {
+    display: grid;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  }
+  &__line {
+    width: 290px;
+    height: 1px;
+    margin: 20px auto;
+    background: $gradient-second;
+  }
+  &__info-block {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo-link {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $md-size) {
+  .footer {
+    &__line {
+      width: 190px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+    font-size: 18px;
+    line-height: 2;
+    &__block {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    &__logo-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      opacity: 0.1;
+    }
+  }
+}
+
+

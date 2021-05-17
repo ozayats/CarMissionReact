@@ -1,0 +1,47 @@
+//fonts
+$headings-font: "PT Sans", "Arial", sans-serif;
+$content-font: "Open Sans", "Arial", sans-serif;
+
+//breakpoints
+$xs-size: 321px;
+$sm-size: 641px;
+$md-size: 961px;
+$lg-size: 1281px;
+$xl-size: 1921px;
+
+//colors
+$black-shadow: rgba(0, 0, 0, 0.15);
+
+$Rectangle78: #f1f1f3;
+$Rectangle77: rgba(229, 231, 233, 0.05);
+
+$Rectangle69: #e5e7e9;
+$Rectangle68: #3b4653;
+$palette-primary: #282832;
+$Rectangle66: #3d3c4a;
+$Rectangle65: #515064;
+$Rectangle64: #747382;
+
+$Rectangle55: #a6b5c7;
+$Rectangle54: #8395aa;
+$Rectangle53: #708195;
+$Rectangle52: #647589;
+$Rectangle51: #dcdce0;
+$Rectangle50: #b9b9c1;
+$Rectangle49: #9796a2;
+$palette-secondary: #c6d1de;
+
+$gradient-first: linear-gradient(
+  274.95deg,
+  #bebfc0 2.76%,
+  #7d7e80 32.64%,
+  #dddedf 60.28%,
+  #646567 97.25%
+);
+$gradient-second: linear-gradient(
+  278.21deg,
+  #bebfc0 -147.54%,
+  #7d7e80 4.82%,
+  #dddedf 168.4%,
+  #646567 373.33%
+);

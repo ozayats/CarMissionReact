@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 12.18.4
+cache:
+  directories:
+  - './client/node_modules'
+before_script:
+- npm install --prefix './client/'
+script:
+- npm run test --prefix './client/'
+env:
+  global:
+    secure: Auusy6Lmuv3TfdfK1FnjxbYg7yYig8T9C1iIoiML1YJrNLEVxekVKc8H6bMYh3h67Jn/+blak1TQhxUmJnqGIJouc0xs84HmNPocFvP3Z+5LjCOR+kaKQ+vA6yv4CtuU9f2JOYIz9DlQq9O/HlwE1ojixJjgA46y6UdpWznWIYd/eFeQkEwR1bziasqekV4vqx3u9032CgdTX9AtHUapToVzPzJJYEOs4G/dQWCPNjCAfAVZBfD9Pxd9le1WG3PBoQfGEgDonqGwEuOsnafZWVs3BFj3O0JjVycoPJaCraKqjceIk3mlq4QCNSDjQDpPyHNsVElWLIkGc/62DDCwQ1YgO3XEKWjjct/6+qtjBVxposVf+bZtqJhTHntTyJNhRrwhgKmeOp+23SaWCortd+xlYc1RZcVRY9nA2EwBm5Ug0v/jYYPfynvfYz54xxSyghe2CChMHlqazakHOoeJcW+JdmX3a8F8QEGU+CoiefAZOI3CX6tw0D60w9sngtwVSkxYr2SEyrfXUTub7EB65Qa1Le6Jy5UpS9QygaAQTeNP77kAjJvguXKObB0Qn+noMnK+Vfs3vvwjtiTRaD9m6Cn/JzyCuxd8t8tBwek3c7BuJI12s+1vBRFz5/2yEFhDIsFJeFhxGHiMUTAlEEQ9ywHyv3fA0d5T1UdqDrWsB+8=

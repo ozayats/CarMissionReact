@@ -1,0 +1,35 @@
+@import "src/theme/styles/variables";
+@import "src/theme/styles/mixins";
+
+.admin-users {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+
+  &__form-container {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  &__container-head {
+    margin: 10px 0;
+  }
+
+  &__switch {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  &__switch-name {
+    margin-right: 20px;
+    color: $palette-secondary;
+    font-size: 20px;
+  }
+
+  &__add-btn {
+    @include add-form-btn;
+  }
+}

@@ -1,0 +1,119 @@
+@import "src/theme/styles/_variables";
+
+.navbar,
+.footer {
+  display: flex;
+  font-size: 14px;
+}
+
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+
+  &__block {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+  }
+}
+
+.footer {
+  flex-direction: column;
+  justify-content: space-between;
+  &--left-side {
+    align-items: flex-start;
+  }
+  &--right-side {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  .navbar {
+    justify-content: space-between;
+    &__block {
+      grid-template-columns: 45% 10% 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    font-size: 24px;
+    background-color: $palette-primary;
+    border-radius: 15px;
+    animation-name: show-menu;
+    animation-duration: 0.5s;
+
+    @keyframes show-menu {
+      0%   {transform: translateX(-100%);}
+      100% {transform: translateX(0%);}
+    }
+
+    &::before, &::after {
+      position: absolute;
+      top: 8%;
+      right: 5%;
+      width: 25px;
+      padding: 1px 0;
+      background-color: $palette-secondary;
+      animation-duration: 0.8s;
+      content: "";
+    }
+    &::before {
+      transform: rotate(45deg);
+      animation-name: navbar-before;
+    }
+    &::after {
+      transform: rotate(135deg);
+      animation-name: navbar-after;
+    } 
+
+    @keyframes navbar-after {
+      0%   {transform: translateY(-400%) rotate(45deg);}
+      100% {transform: translateY(0%) rotate(135deg);}
+    }
+    @keyframes navbar-before {
+      0%   {transform: translateY(-400%) rotate(135deg);}
+      100% {transform: translateY(0%) rotate(45deg);}
+    }
+
+
+
+    
+
+    &__window {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      background-color: #51515539;
+    }
+    &__block {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    &__window {
+      &::before,
+      &::after {
+        top: 8%;
+      }
+    }
+  }
+}

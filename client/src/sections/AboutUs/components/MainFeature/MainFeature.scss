@@ -1,0 +1,23 @@
+@import "../../../../theme/styles/variables";
+@import "../../../../theme/styles/mixins";
+
+.about-us__main-feature-box {
+  @include content-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media screen and (min-width: $sm-size) and (max-width: 960px) {
+  .about-us__main-feature-box {
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

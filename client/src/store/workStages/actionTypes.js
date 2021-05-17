@@ -1,0 +1,4 @@
+export const LOADING_STAGES = "LOADING_STAGES";
+export const SET_IS_LOADING_STAGES = "SET_IS_LOADING_STAGES";
+export const ADD_NEW_STAGE = "ADD_NEW_STAGE";
+export const UPDATE_STAGE = "UPDATE_STAGE";

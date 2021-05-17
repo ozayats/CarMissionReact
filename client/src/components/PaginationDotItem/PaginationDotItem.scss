@@ -1,0 +1,46 @@
+@import "src/theme/styles/variables";
+
+.dot__link {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 3px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: 0.3s;
+
+  &--active {
+    background: linear-gradient($palette-primary, $palette-primary) padding-box,
+      linear-gradient(
+          274.95deg,
+          #bebfc0 2.76%,
+          #7d7e80 32.64%,
+          #dddedf 60.28%,
+          #646567 97.25%
+        )
+        border-box;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dot {
+  z-index: 20;
+  width: 7px;
+  height: 7px;
+  background: linear-gradient(
+    278.21deg,
+    #bebfc0 -147.54%,
+    #7d7e80 4.82%,
+    #dddedf 168.4%,
+    #646567 373.33%
+  );
+  border-radius: 50%;
+}
+
+@media screen and (min-width: $sm-size) and (max-width: 960px) {
+}
+
+@media screen and (max-width: 640px) {
+}

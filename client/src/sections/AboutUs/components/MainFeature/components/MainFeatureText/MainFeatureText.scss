@@ -1,0 +1,52 @@
+@import "../../../../../../theme/styles/variables";
+
+.about-us__main-feature-text {
+  margin: 30px 0;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: justify;
+  text-shadow: 1px 1px 1px $palette-primary;
+
+  &-box {
+    background: #383841;
+  }
+}
+
+@media screen and (min-width: $sm-size) and (max-width: 960px) {
+  .about-us__main-feature-text {
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: justify;
+    text-shadow: 1px 1px 1px $palette-primary;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-box {
+      background: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about-us__main-feature-text {
+    margin: 5px 0;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: justify;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-box {
+      height: auto;
+      background: transparent;
+    }
+  }
+}

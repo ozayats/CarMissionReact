@@ -1,0 +1,83 @@
+@import "src/theme/styles/variables";
+@import "src/theme/styles/mixins";
+
+.admin-stages {
+  &__form-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 30px;
+    color: $palette-secondary;
+    border: $palette-secondary 1px solid;
+    border-radius: 30px;
+  }
+
+  &__form-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  &__submit-btn {
+    padding: 10px 20px;
+    font-family: $content-font;
+    background: darkseagreen;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: greenyellow;
+    }
+  }
+
+  &__form-input {
+    width: 100%;
+    height: 25px;
+    color: $palette-primary;
+    font-size: 17px;
+    font-family: $content-font;
+    background: $palette-secondary;
+    border: none;
+  }
+
+  &__delete-btn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 5px 10px;
+    color: $palette-secondary;
+    font-size: 40px;
+    background: none;
+    border: none;
+    transition: 0.3s;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  &__delete-img-btn {
+    margin-left: 15px;
+    padding: 5px 10px;
+    color: $palette-secondary;
+    font-size: 15px;
+    background: none;
+    border: none;
+    transition: 0.3s;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  &__form-error {
+    @include form-error;
+  }
+}

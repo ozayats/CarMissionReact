@@ -1,0 +1,84 @@
+@import "../../../theme/styles/variables";
+@import "../../../theme/styles/mixins";
+
+.service-item {
+  width: 320px;
+  margin: 5px;
+  color: $palette-secondary;
+  text-align: left;
+  background: linear-gradient(
+    325.31deg,
+    rgba(124, 125, 127, 0.1) -54.96%,
+    rgba(190, 191, 192, 0.1) -39.28%,
+    rgba(125, 126, 128, 0.1) -2.72%,
+    rgba(221, 222, 223, 0.1) 44.09%,
+    rgba(100, 101, 103, 0.1) 78.43%
+  );
+  border-radius: 3px;
+
+  & ul {
+    font-family: $content-font;
+  }
+
+  & li {
+    padding-bottom: 15px;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 19px;
+    list-style-type: initial;
+  }
+
+  &__title {
+    padding-top: 18px;
+    padding-bottom: 12px;
+    font-family: $headings-font;
+    text-align: center;
+
+    &:after {
+      display: block;
+      width: 291px;
+      height: 1px;
+      margin-top: 13px;
+      margin-left: 14px;
+      background: $palette-secondary;
+      content: "";
+    }
+  }
+
+  &__name {
+    padding-bottom: 12px;
+    font-weight: bold;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  &__currency {
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 31px;
+    text-align: center;
+  }
+
+  &__serviceList {
+    display: flex;
+    flex-direction: column;
+    padding-top: 22px;
+    padding-bottom: 57px;
+    padding-left: 67px;
+  }
+}

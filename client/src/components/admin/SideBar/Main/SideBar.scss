@@ -1,0 +1,35 @@
+@import "src/theme/styles/variables";
+
+.admin-sidebar {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  width: 20%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 0;
+    color: $palette-primary;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $palette-secondary;
+    transition: 0.3s;
+
+    &--active {
+      color: $palette-secondary;
+      background-color: $palette-primary;
+    }
+  }
+}
